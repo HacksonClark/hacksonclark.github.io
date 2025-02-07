@@ -1,0 +1,52 @@
+body {
+    font-family: Lato, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    font-family: Consolas, sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+}
+
+header {
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+}
+
+header p {
+    color: #666;
+}
+
+section h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f8f8f8;
+}
+
+.publications ul li {
+    background-color: #eef;
+}
