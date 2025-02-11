@@ -3,12 +3,16 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000019;
+    background-image: url('gifs/num.gif');
+    background-repeat: repeat;
+    user-select: none;
 }
 
 .header {
     font-family: Consolas, sans-serif;
 }
+
 /* UIUC orange hex code: #FF5F05 */
 .container {
     width: 800px;
@@ -16,6 +20,8 @@ body {
     overflow: hidden;
     padding: 20px;
     background: #fff;
+    border-width: medium;
+    border-color: navy;
 }
 
 header {
@@ -44,7 +50,7 @@ ul {
 ul li {
     margin-bottom: 10px;
     padding: 5px;
-    background-color: #f8f8f8;
+    background-color: #eef;
 }
 
 .publications ul li {
