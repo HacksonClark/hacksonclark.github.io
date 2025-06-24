@@ -80,3 +80,9 @@ ul li {
     flex: 1;
 }
 
+
+.headshot {
+    width: 100px; /* Or whatever small size you want */
+    height: auto;
+    margin-top: 10px;
+}
