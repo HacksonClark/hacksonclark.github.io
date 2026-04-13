@@ -12,15 +12,30 @@ body {
     font-family: Consolas, sans-serif;
 }
 
-/* UIUC orange hex code: #FF5F05 */
+:root {
+    --uiuc-orange: #FF5F05;
+    --uiuc-blue: #13294B;
+}
+
+a {
+    color: var(--uiuc-blue);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 95, 5, 0.4);
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover {
+    color: var(--uiuc-orange);
+    border-bottom-color: var(--uiuc-orange);
+}
+
 .container {
     width: 800px;
     margin: auto;
     overflow: hidden;
-    padding: 20px;
+    padding: 20px 30px;
     background: #fff;
-    border-width: medium;
-    border-color: navy;
+    border-top: 4px solid var(--uiuc-orange);
 }
 
 header {
@@ -30,7 +45,8 @@ header {
 }
 
 header h1 {
-    color: #333;
+    color: var(--uiuc-blue);
+    margin-bottom: 0;
 }
 
 header p {
@@ -38,7 +54,11 @@ header p {
 }
 
 section h2 {
-    color: #333;
+    color: var(--uiuc-blue);
+    border-bottom: 2px solid var(--uiuc-orange);
+    padding-bottom: 4px;
+    display: inline-block;
+    margin-bottom: 0.6em;
 }
 
 ul {
@@ -48,12 +68,99 @@ ul {
 
 ul li {
     margin-bottom: 10px;
-    padding: 5px;
-    background-color: #eef;
+    padding: 8px 12px;
+    background-color: #f7f7f9;
+    border-left: 3px solid var(--uiuc-orange);
 }
 
 .publications ul li {
-    background-color: #eef;
+    background-color: #f7f7f9;
+}
+
+/* News */
+.news-list li {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+}
+
+.news-date {
+    flex: 0 0 80px;
+    font-weight: bold;
+    color: var(--uiuc-orange);
+    font-family: Consolas, monospace;
+    font-size: 0.9em;
+}
+
+/* Experience */
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.exp-date {
+    color: var(--uiuc-orange);
+    font-family: Consolas, monospace;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.exp-meta {
+    color: #666;
+    font-style: italic;
+    font-size: 0.92em;
+    margin-bottom: 4px;
+}
+
+/* BibTeX */
+.bibtex {
+    margin-top: 6px;
+}
+
+.bibtex summary {
+    cursor: pointer;
+    color: var(--uiuc-blue);
+    font-size: 0.9em;
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid var(--uiuc-orange);
+    border-radius: 3px;
+    user-select: none;
+}
+
+.bibtex summary:hover {
+    background: var(--uiuc-orange);
+    color: #fff;
+}
+
+.bibtex pre {
+    background: #1e1e2a;
+    color: #e8e8f0;
+    padding: 12px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 0.85em;
+    margin-top: 8px;
+}
+
+.media-sub {
+    margin-top: 6px;
+}
+
+.media-sub li {
+    background-color: transparent;
+    border-left: 2px solid #ddd;
+    padding: 2px 10px;
+    margin-bottom: 4px;
+}
+
+.oral {
+    color: var(--uiuc-orange);
+    font-weight: bold;
+    margin: 6px 0 0;
 }
 
 .publication-list {
@@ -70,7 +177,7 @@ ul li {
 .venue {
     min-width: 100px;
     font-weight: bold;
-    color: #555;
+    color: var(--uiuc-orange);
     margin-right: 1em;
     flex-shrink: 0;
 }
