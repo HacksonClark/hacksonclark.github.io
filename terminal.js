@@ -35,6 +35,8 @@ const BOOT = [
     ['', '\n\nPhD candidate @ UIUC · AI for Site Reliability Engineering\n', 10],
     ['c-acc2', '> ', 10], ['', 'building SREGym: Can AI agents resolve production incidents?\n', 10],
     ['c-acc2', '> ', 10], ['', 'SREGym accepted to NeurIPS 2026 🇦🇺\n', 10],
+    ['c-acc2', '> ', 10], ['', 'SREGym is the headline result in the Devin Oncall release\n', 10],
+    ['c-acc2', '> ', 10], ['', 'SREGym featured in Datadog\'s Scout 1.0 technical report\n', 10],
     ['c-muted', "\ntype 'help' for commands, or just scroll ↓\n\n", 10],
 ];
 
