@@ -32,7 +32,7 @@ const BOOT = [
     ['c-prompt', '$ ', 20], ['c-cmd', 'ssh hackson@uiuc\n', 35],
     ['c-ok', '[  OK  ] ', 4], ['c-muted', 'connected · last login ' + new Date().toDateString() + '\n\n', 4],
     ['art', ART + '\n', 1],
-    ['', '\n\nPhD candidate @ UIUC · AI for Site Reliability Engineering\n', 10],
+    ['', '\n\nResearch Scientist @ Snorkel AI · PhD candidate @ UIUC\n', 10],
     ['c-acc2', '> ', 10], ['', 'building SREGym: Can AI agents resolve production incidents?\n', 10],
     ['c-acc2', '> ', 10], ['', 'SREGym accepted to NeurIPS 2026 🇦🇺\n', 10],
     ['c-acc2', '> ', 10], ['', 'SREGym is the headline result in the Devin Oncall release\n', 10],
@@ -93,7 +93,7 @@ const HELP = [
 const cmds = {
     help: () => c('muted', 'commands:\n') + HELP.map(([k, v]) => '  ' + c('acc', k.padEnd(18)) + c('muted', '→ ' + v)).join('\n')
         + c('muted', '\n\n(there may be a few more. SREs will find them.)'),
-    whoami: () => c('cmd', 'Jackson Clark') + '\n' + c('muted', 'PhD candidate · Siebel School of CDS, UIUC · advised by Tianyin Xu\nAI for SRE · systems reliability · post-training & RL · evals'),
+    whoami: () => c('cmd', 'Jackson Clark') + '\n' + c('muted', 'Research Scientist · Snorkel AI\nPhD candidate · Siebel School of CDS, UIUC · advised by Tianyin Xu\nAI for SRE · systems reliability · post-training & RL · evals'),
     sregym: () => c('acc2', 'SREGym') + ' — a live benchmark for AI SRE agents with high-fidelity failure scenarios.\n'
         + c('muted', 'NeurIPS 2026 · CAIS 2026 Demo · Laude Slingshot\n') + '→ ' + link('https://sregym.com', 'sregym.com') + '  ' + link('https://github.com/SREGym/SREGym', 'github'),
     cv: () => open('jc-cv.pdf', 'cv.pdf'),
